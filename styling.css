@@ -45,6 +45,7 @@ body {
     position: relative;
     top:10px;
 }
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -244,6 +245,7 @@ section {
 
 .pizza-card:hover {
     transform: translateY(-10px);
+    box-shadow: rgba(255, 255, 255, 0.75) 0px 0px 20px 15px;
 }
 
 .pizza-image {
@@ -334,7 +336,7 @@ section {
     opacity: 1;
 }
 .blog-header{
-    padding: 10px;
+    padding: 30px;
     text-align: center;
     border-radius: 50px;
     animation: all 2s ease;
@@ -402,6 +404,8 @@ section {
     text-align: center;
 }
 #about h2 {
+    position: relative;
+    top: 40px;
     font-size: 3rem;
     margin-bottom: 2rem;
     color: #fff;
@@ -514,6 +518,11 @@ section {
 .login-btn:hover {
     background: #000000;
 }
+#menu-toggle {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+}
 
 @media (max-width: 768px) {
     .hamburger {
@@ -522,25 +531,33 @@ section {
     .rotating-img{
         display: none;
     }
-
     .nav-menu {
         position: fixed;
         top: 70px;
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: rgba(139, 69, 19, 0.95);
+        background: rgb(0, 0, 0);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         padding-top: 2rem;
         transition: left 0.3s ease;
     }
-
-    .nav-menu.active {
-        left: 0;
+    #menu-toggle:checked ~ .nav-menu {
+        left: 0%;
     }
-
+    .hero-container{
+        display: none;
+    }
+    .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content:left;
+    }
+    .nav-container > *:first-child {
+        margin-right: auto;
+    }
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -572,8 +589,8 @@ section {
         padding: 80px 1rem 1rem;
     }
     .pizza-card:hover .circular-image{
-    transform: scale(1.2);
-}
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 480px) {
@@ -611,6 +628,7 @@ section {
 }
 
 .review-card:hover {
+    box-shadow: rgba(255, 255, 255, 0.75) 0px 0px 20px 15px;
     animation: fadeInUp 1s ease forwards;
 }
 
