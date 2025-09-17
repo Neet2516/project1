@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LovePizza - Authentic Italian Experience</title>
-    <link rel="icon" href="assets/pizza.png" type="image/x-icon">
 
+    <link rel="icon" href="assets/pizza.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styling.css">
+
 </head>
 
 <body>
@@ -20,13 +21,15 @@
                 <img src="assets/LovePizza.png" width="40" height="40" alt="LovePizza Logo">
                 LovePizza
             </a>
+            
+            <input type="checkbox" id="menu-toggle">
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Book a Table</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Book a Table</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -36,6 +39,7 @@
         </div>
     </nav>
 
+    
     <section id="home">
         <div class="hero-content">
             <div class="hero-container">
@@ -53,238 +57,9 @@
             <h1 style="color:rgb(199, 177, 177)">LovePizza</h1>
             <p>Experience the authentic taste of Italy with our handcrafted pizzas made from the finest ingredients
             </p>
-            <a href="#shop" class="cta-button">Order Now</a>
+            <a href="shop.html" class="cta-button">Order Now</a>
         </div>
     </section>
-
-    <section id="shop">
-        <div class="container">
-            <h2 class="section-title">Our Delicious Pizzas</h2>
-            <img src="assets/pizza2.png" class="rotating-img" alt="">
-            <div class="pizza-carousel">
-                <div class="pizza-container">
-
-                    <div class="pizza-card pcard1">
-                        <div class="pizza-image">
-                            <img src="assets/pizzas/margherita_pizza.jpeg" width="100" height="100"
-                                class="circular-image" alt="Margherita Pizza">
-                        </div>
-                        <h3>Margherita Classic</h3>
-                        <p>Fresh mozzarella, basil, tomato sauce on our signature crust</p>
-                        <div class="pizza-price">$12.99</div>
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <span class="quantity">0</span>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card pcard2">
-                        <div class="pizza-image">
-                            <img src="assets/pizzas/pepperoni pizza.jpeg" class="circular-image" width="100"
-                                height="100" alt="Pepperoni Supreme Pizza">
-                        </div>
-                        <h3>Pepperoni Supreme</h3>
-                        <p>Spicy pepperoni, mozzarella, oregano on crispy thin crust</p>
-                        <div class="pizza-price">$15.99</div>
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <span class="quantity">0</span>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card pcard3">
-                        <div class="pizza-image">
-                            <img src="assets/pizzas/vegge_supreme_pizza.jpeg" class="circular-image" width="100"
-                                height="100" alt="Veggie Delight Pizza">
-                        </div>
-                        <h3>Veggie Delight</h3>
-                        <p>Bell peppers, mushrooms, olives, onions, fresh herbs</p>
-                        <div class="pizza-price">$14.99</div>
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <span class="quantity">0</span>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card pcard4">
-                        <div class="pizza-image">
-                            <img src="assets/pizzas/panner_tikka_pizza.jpeg" class="circular-image" width="100"
-                                height="100" alt="Meat Lovers Pizza">
-                        </div>
-                        <h3>Panner Tikka Pizza</h3>
-                        <p>Pepperoni, sausage, ham, bacon on thick crust</p>
-                        <div class="pizza-price">$18.99</div>
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <span class="quantity">0</span>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                    </div>
-
-                    <div class="pizza-card pacrd5 ">
-                        <div class="pizza-image">
-                            <img src="assets/pizzas/Hawani_Pizza.png" class="circular-image" width="100" height="100"
-                                alt="Hawaiian Paradise Pizza">
-                        </div>
-                        <h3>Hawaiian Paradise</h3>
-                        <p>Ham, pineapple, mozzarella on golden crust</p>
-                        <div class="pizza-price">$16.99</div>
-                        <div class="quantity-control">
-                            <button class="quantity-btn">-</button>
-                            <span class="quantity">0</span>
-                            <button class="quantity-btn">+</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog">
-        <div class="container">
-            <div class="blog-header">
-                <h2>Customer Stories</h2>
-            </div>
-            <img src="assets/pizza3.png"  class="rotating-img" style="top:10px">
-            <div class="reviews-grid">
-
-                <div class="review-card featured-review">
-                    <div class="featured-badge">Featured Review</div>
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <h4>Scarlet Johnson</h4>
-                            <p class="reviewer-location">New York, NY</p>
-                        </div>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">Absolutely amazing! The best pizza I've ever had. The crust is perfect and
-                        the ingredients are so fresh. I've been coming here every week for the past 6 months and it
-                        never disappoints. The Margherita Classic tastes like it's straight from Naples!</p>
-                    <div class="review-date">March 15, 2024</div>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <h4>Brie Larson</h4>
-                            <p class="reviewer-location">Brooklyn, NY</p>
-                        </div>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">LovePizza has become our family's favorite spot. The atmosphere is great and
-                        the staff is incredibly friendly. Highly recommend the Meat Lovers - it's loaded with flavor!
-                    </p>
-                    <div class="review-date">March 12, 2024</div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer-info">
-                            <h4>Emma Stone</h4>
-                            <p class="reviewer-location">Staten Island, NY</p>
-                        </div>
-                    </div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">The Truffle Mushroom pizza is a masterpiece! Worth every penny. The ambiance
-                        in the restaurant is cozy and romantic - perfect for date nights.</p>
-                    <div class="review-date">February 28, 2024</div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <div class="about-content">
-                <h2>Our Story</h2>
-                <div class="about-rotate">
-                    <img src="assets/pizza.png" class="rotating-img" alt="">
-
-                    <div class="des">
-                        <p><img src="assets/pizzas/restaurent.png" height="200px"></p>
-                        <p>Founded in 2018 by Italian chef Marco Benedetti, LovePizza began as a small family restaurant
-                            with a
-                            simple mission: to bring authentic Italian flavors to every slice. Using recipes passed down
-                            through
-                            three generations, we combine traditional techniques with the finest locally-sourced
-                            ingredients.
-                        </p>
-                        <p>Our wood-fired ovens, imported directly from Naples, create the perfect crispy crust that our
-                            customers have come to love. Each pizza is hand-stretched and topped with premium
-                            ingredients, from
-                            San Marzano tomatoes to fresh mozzarella made daily in our kitchen.</p>
-                        <p>Today, LovePizza has grown into a beloved local institution, serving thousands of happy
-                            customers
-                            while maintaining our commitment to quality, authenticity, and the warm hospitality that
-                            Italy is
-                            famous for.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <img src="assets/pizza-board.png" class="rotating-img" alt="">
-            <h2 class="section-title" style="color: white;">Book a Table & Contact Us<img
-                    src="assets/pizzas/contactpizza.png" height="250px"></h2>
-            <div class="contact-content">
-
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <div class="contact-item">
-                        <strong>Email:</strong>
-                        <span>getneet.25@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Phone:</strong>
-                        <span>8882159469</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Address:</strong>
-                        <span>IIT DASNA</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Hours:</strong>
-                        <span>Mon-Thu: 11AM-10PM<br>Fri-Sun: 11AM-11PM</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong> Website:</strong>
-                        <span>www.lovepizza.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <strong> Social:</strong>
-                        <span>its.navneet.25</span>
-                    </div>
-                </div>
-
-                <div class="login-form">
-                    <h3>Customer Login</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required>
-                        </div>
-                        <button type="submit" class="login-btn">Login to Order</button>
-                    </form>
-                    <p style="margin-top: 1rem; text-align: center;">
-                        <a href="#" style="color: #ff6b35;">Forgot Password?</a> |
-                        <a href="#" style="color: #ff6b35;">Create Account</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
 </body>
 
 </html>
