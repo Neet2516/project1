@@ -41,7 +41,10 @@ body {
     color: #fff;
     text-decoration: none;
 }
-
+.logo img{
+    position: relative;
+    top:10px;
+}
 .nav-menu {
     display: flex;
     list-style: none;
@@ -90,7 +93,7 @@ section {
 .rotating-img{
     height:600px;
     position: absolute;
-    left:-200px;
+    left:-370px;
     animation: rotate 10s linear infinite;
 }
 @keyframes rotate {
@@ -346,17 +349,16 @@ section {
 }
 
 .review-card {
-    background: linear-gradient(135deg, #ff6b35, #ffa500);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     color: white;
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
     transform: perspective(1000px) rotateY(0deg);
     transition: transform 1s ease;
-}
-
-.review-card:hover {
-    transform: perspective(1000px) rotateY(180deg);
 }
 
 .stars {
@@ -520,6 +522,7 @@ section {
     .rotating-img{
         display: none;
     }
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -564,9 +567,13 @@ section {
         grid-template-columns: 1fr;
     }
 
+
     section {
         padding: 80px 1rem 1rem;
     }
+    .pizza-card:hover .circular-image{
+    transform: scale(1.2);
+}
 }
 
 @media (max-width: 480px) {
@@ -631,3 +638,8 @@ section {
 }
 
 
+@media (max-width:100px) {
+    .rotating-img{
+        display: none;
+    }
+}
